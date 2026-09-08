@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ZombieParty.Models
+namespace ZombieParty.Models.Data
 {
     public class ZombiePartyDbContext : DbContext
     {
@@ -8,6 +8,6 @@ namespace ZombieParty.Models
         {
 
         }
-
+        public DbSet<Zombie> Zombies { get; set; }
     }
 }
